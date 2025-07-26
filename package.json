@@ -1,0 +1,40 @@
+{
+  "name": "diff-reload",
+  "version": "0.1.0",
+  "description": "A lightweight JavaScript library for efficient partial DOM updates and seamless HTML streaming integration.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aralroca/diff-reload.git"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "bun": "./dist/index.js",
+      "node": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Aral Roca",
+    "email": "contact@aralroca.com"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "bun build ./index.ts --outdir ./dist"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "diff-dom-streaming": "^0.6.6"
+  }
+}
