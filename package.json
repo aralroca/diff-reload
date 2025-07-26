@@ -28,7 +28,8 @@
   },
   "type": "module",
   "scripts": {
-    "build": "bun build ./index.ts --outdir ./dist"
+    "build": "bun build ./index.ts --outdir ./dist",
+    "deploy": "npm run build && npm publish"
   },
   "devDependencies": {
     "@types/bun": "latest",
